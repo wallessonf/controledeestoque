@@ -1,5 +1,6 @@
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     background-color: #f9f9f9;
     margin: 20px;
     padding: 0;
@@ -8,6 +9,7 @@ body {
 
 h1, h2, h3 {
     color: #2c3e50;
+    text-align: center;
 }
 
 input[type="text"],
@@ -17,6 +19,8 @@ input[type="number"] {
     border: 1px solid #ccc;
     border-radius: 8px;
     margin-bottom: 10px;
+    display: block;
+    max-width: 100%;
 }
 
 button {
@@ -30,7 +34,7 @@ button {
 }
 
 button:hover {
-    background-color: #5b4caf;
+    background-color: #4a3b9f;
 }
 
 .mostrarTodos {
@@ -45,11 +49,15 @@ button:hover {
     margin-bottom: 20px;
 }
 
-.doisBotoes button {
-    margin-right: 10px;
+.doisBotoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-#listaProdutos ul {
+#listaProdutos ul,
+#produtoEncontrado ul {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -61,14 +69,83 @@ button:hover {
 #produtoEncontrado ul {
     background-color: #ffffcc;
     border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
-    list-style-type: none;
 }
 
 #totalEstoque {
     font-weight: bold;
     color: #e67e22;
     margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 100%;
+    }
+
+    .doisBotoes {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #listaProdutos ul,
+    #produtoEncontrado ul {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6em;
+        margin-bottom: 20px;
+    }
+
+    h2, h3 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    button {
+        font-size: 16px;
+        padding: 12px;
+        width: 100%;
+    }
+
+    .digiteDados,
+    .doisBotoes {
+        margin-bottom: 20px;
+    }
+
+    .doisBotoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mostrarTodos {
+        font-size: 16px;
+        padding: 12px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;       
+      max-width: 300px;  
+      margin: 0 auto 10px auto; 
+      display: block;   
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
 }
