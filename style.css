@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5b4caf;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5b4caf;
+}
+
+.mostrarTodos {
+    background-color: #3498db;
+}
+
+.mostrarTodos:hover {
+    background-color: #2980b9;
+}
+
+.digiteDados {
+    margin-bottom: 20px;
+}
+
+.doisBotoes button {
+    margin-right: 10px;
+}
+
+#listaProdutos ul {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+#produtoEncontrado ul {
+    background-color: #ffffcc;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+#totalEstoque {
+    font-weight: bold;
+    color: #e67e22;
+    margin-top: 10px;
+}

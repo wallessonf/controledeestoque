@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Controle de Estoque - JSON</title>
-    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Controle de Estoque</h1>
 
+    <div class="digiteDados">
     <input type="text" id="nomeProduto" placeholder="Nome do Produto"><br><br>
     <input type="number" id="quantidadeProduto" placeholder="Quantidade"><br><br>
     <input type="number" id="precoProduto" placeholder="Preço Unitário"><br><br>
+    </div>
 
+    <div class="doisBotoes">
     <button onclick="adicionarProduto()">Adicionar Produto</button><br><br>
     <button onclick="excluirProduto()">Excluir Produto</button><br><br>
+    </div>
 
     <input type="text" id="buscaProduto" placeholder="Buscar Produto">
     <button onclick="buscarProduto()">Buscar</button><br><br>
     <div id="produtoEncontrado" ></div>
 
-    <button onclick="mostrarTodos()">Mostrar Todos</button>
+    <button onclick="mostrarTodos()" class="mostrarTodos">Mostrar Todos</button>
 
     <h2>Produtos no Estoque:</h2>
     <div id="listaProdutos"></div>
